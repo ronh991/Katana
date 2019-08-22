@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>pedestal.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>pedestal</object-name>
+    <object-name>throttle</object-name>
+    <object-name>mixture</object-name>
+    <object-name>planche1</object-name>
+    <object-name>planche1</object-name>
+    <object-name>defrost</object-name>
+    <object-name>off</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Aération -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Pedestal/Instruments/trim/trim.xml</path>
+    <offsets>
+      <x-m>  0.07258 </x-m>
+      <y-m> -0.03377 </y-m>
+      <z-m>  0.04149 </z-m>
+      <pitch-deg> 5 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!--  Throttle pick animation -->
+  <animation>
+    <type>pick</type>
+    <object-name>throttle</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/throttle</property>
+        <step> 0.01 </step>
+        <min> 0 </min>
+        <max> 1 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/throttle</property>
+        <step> -0.01 </step>
+        <min> 0 </min>
+        <max> 1 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>throttle</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> -0.055 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!--  Mixture pick animation -->
+  <animation>
+    <type>pick</type>
+    <object-name>mixture</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/mixture</property>
+        <step> 0.01 </step>
+        <min> 0 </min>
+        <max> 1 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/mixture</property>
+        <step> -0.01 </step>
+        <min> 0 </min>
+        <max> 1 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>mixture</object-name>
+    <property>controls/engines/engine[0]/mixture</property>
+    <factor> -0.055 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

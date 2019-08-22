@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>flaps.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>guard</object-name>
+    <object-name>switch</object-name>
+    <object-name>light-cruise</object-name>
+    <object-name>light-to</object-name>
+    <object-name>light-ldg</object-name>
+    <object-name>light-cruise-off</object-name>
+    <object-name>light-to-off</object-name>
+    <object-name>light-ldg-off</object-name>
+    <object-name>flapswitch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>light-cruise</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <red>   0.133 </red>
+      <green> 0.855 </green>
+      <blue>  0.145 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>light-to</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <red>   1.000 </red>
+      <green> 1.000 </green>
+      <blue>  0.165 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>light-ldg</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <red>   0.000 </red>
+      <green> 0.000 </green>
+      <blue>  1.000 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>light-cruise</object-name>
+    <condition>
+      <less-than>
+        <property>/controls/flight/flaps</property>
+        <value>0.373</value>
+      </less-than>
+    </condition> 
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>light-to</object-name>
+    <condition>
+      <and>
+        <greater-than> 
+          <property>/controls/flight/flaps</property>
+          <value>0.172</value>
+        </greater-than> 
+        <less-than>
+          <property>/controls/flight/flaps</property>
+          <value>0.390</value>
+        </less-than>
+      </and>
+    </condition> 
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>light-ldg</object-name>
+    <condition>
+      <greater-than> 
+        <property>/controls/flight/flaps</property>
+        <value>0.699</value>
+      </greater-than> 
+    </condition> 
+  </animation>
+
+
+    <!-- ================================================================== -->
+    <!-- Flaps lever                                                        -->
+    <!-- ================================================================== -->
+
+    <animation>
+        <type>rotate</type>
+		<property>surface-positions/flap-pos-norm</property>
+        <object-name>flapswitch</object-name>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+        <interpolation>
+            <entry>
+                <ind>0.0</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>20</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>40</dep>
+            </entry>
+        </interpolation>
+    </animation>
+
+
+  <animation>
+    <type>pick</type>
+    <object-name>flaps.Down</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>nasal</command>
+        <script>controls.flapsDown(1)</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>controls.flapsDown(0)</script>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>flaps.Up</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>nasal</command>
+        <script>controls.flapsDown(-1)</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>controls.flapsDown(0)</script>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Based on  -->
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>facepanel</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>facepanel</object-name>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.4 </green>
+      <blue>  0.4 </blue>
+      <factor-prop>controls/lighting/panel-dim</factor-prop>
+    </emission>
+  </animation>
+
+  <!-- PEDESTAL -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Pedestal/pedestal.xml</path>
+    <offsets>
+      <x-m>  0.14745 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.32190 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AIR -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/air/air.xml</path>
+    <offsets>
+      <x-m>  0.003298 </x-m>
+      <y-m>  0.000000 </y-m>
+      <z-m> -0.127670 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.365 </y-m>
+      <z-m>  0.035 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.265 </y-m>
+      <z-m>  0.035 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.168 </y-m>
+      <z-m>  0.035 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.069 </y-m>
+      <z-m>  0.035 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.365 </y-m>
+      <z-m> -0.064 </z-m>
+    </offsets>
+  </model>
+
+  <!-- HDG -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.265 </y-m>
+      <z-m> -0.064 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.168 </y-m>
+      <z-m> -0.064 </z-m>
+    </offsets>
+  </model> -->
+
+  <!-- KI206 -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.069 </y-m>
+      <z-m> -0.064 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Compass -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.168 </y-m>
+      <z-m>  0.116 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Chrometer -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/chrono/chronometer.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.267 </y-m>
+      <z-m>  0.112 </z-m>
+    </offsets>
+  </model>
+
+  <!-- KX165 -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/kx165/kx165-1.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.080 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Gps -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/gps/kln90b.xml</path>
+    <offsets>
+      <x-m> 0.001 </x-m>
+      <y-m> 0.080 </y-m>
+      <z-m> 0.027 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Kap140 -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/kap140/KAP140TwoAxisAlt.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.080 </y-m>
+      <z-m> -0.020 </z-m>
+    </offsets>
+  </model>
+
+  <!-- KT76A -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
+    <offsets>
+      <x-m> -0.006 </x-m>
+      <y-m>  0.080 </y-m>
+      <z-m> -0.062 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Commutateurs -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/buttons/all-buttons.xml</path>
+    <offsets>
+      <x-m>  0.000624 </x-m>
+      <y-m> -0.192200 </y-m>
+      <z-m> -0.133560 </z-m>
+    </offsets>
+  </model>
+
+  <!-- egt -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.218 </y-m>
+      <z-m> 0.106 </z-m>
+    </offsets>
+  </model>
+
+  <!-- fuel -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.218 </y-m>
+      <z-m> 0.039 </z-m>
+    </offsets>
+  </model>
+
+  <!-- oil-press -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.218 </y-m>
+      <z-m> -0.026 </z-m>
+    </offsets>
+  </model>
+
+  <!-- amps -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/amps/amps.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.218 </y-m>
+      <z-m> -0.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cht -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/cht/cht.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.288 </y-m>
+      <z-m> 0.106 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Fuel temp -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/fuel-temp/fuel-temp.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.288 </y-m>
+      <z-m> 0.039 </z-m>
+    </offsets>
+  </model>
+
+  <!-- oil-temp -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/oil-temp/oil-temp.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.288 </y-m>
+      <z-m> -0.026 </z-m>
+    </offsets>
+  </model>
+
+  <!-- volts -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/volts/volts.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.288 </y-m>
+      <z-m> -0.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Flaps -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.010 </y-m>
+      <z-m> -0.134 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Magnetos -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.154 </y-m>
+      <z-m> -0.141 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Hobbs -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/hobbs/hobbs.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.283 </y-m>
+      <z-m> -0.147 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Warnings -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/warning/warning.xml</path>
+    <offsets>
+      <x-m> 0.003 </x-m>
+      <y-m> 0.026 </y-m>
+      <z-m> 0.117 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Breakers -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/breakers/breakers.xml</path>
+    <offsets>
+      <x-m>  0.000737 </x-m>
+      <y-m>  0.378310 </y-m>
+      <z-m> -0.039870 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Fuel Prime -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/fuel-prime/fuel-prime.xml</path>
+    <offsets>
+      <x-m>  0.002305 </x-m>
+      <y-m> -0.424450 </y-m>
+      <z-m>  0.007406 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Aération -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/aeration/aeration.xml</path>
+    <offsets>
+      <x-m> -0.001482 </x-m>
+      <y-m> -0.440500 </y-m>
+      <z-m> -0.050160 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Plaques -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/plaques/all-plaques.xml</path>
+  </model>
+  
+</PropertyList>

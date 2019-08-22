@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>fuel-prime.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>texte</object-name>
+    <object-name>switch</object-name>
+    
+    <object-name>lampe</object-name>
+  </animation>
+
+</PropertyList>

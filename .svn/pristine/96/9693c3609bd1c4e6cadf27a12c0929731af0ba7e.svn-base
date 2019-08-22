@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>cht.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Katana/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>needle</object-name>
+    <object-name>face</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <red>   0.80 </red>
+      <green> 0.50 </green>
+      <blue>  0.50 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>engines/engine/cht-degf</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 120 </ind><dep>  4.0 </dep></entry>
+      <entry><ind> 160 </ind><dep> 22.0 </dep></entry>
+      <entry><ind> 210 </ind><dep> 39.0 </dep></entry>
+      <entry><ind> 250 </ind><dep> 70.0 </dep></entry>
+      <entry><ind> 300 </ind><dep> 95.0 </dep></entry>
+      <entry><ind> 310 </ind><dep> 99.9 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.000000000 </x-m>
+      <y-m>  0.000166406 </y-m>
+      <z-m> -0.010072500 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
