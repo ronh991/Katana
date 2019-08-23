@@ -7,8 +7,12 @@ Katana YASim
 
 Updated:
 
-Flaps
+Flaps - switch togles rather than slider, light indicators fixed
+
+Other switches - on/off with sound (functions to be updated)
+
 ASI - follows correct values
+
 RPM - follows correct values
 
 YASIM - model data updated
